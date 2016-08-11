@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <!DOCTYPE html>
+  <head>
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <title>电阻计算</title>
+	<header>aaa</header>
+	<h1>电阻计算</h1>
+	<p>
+	  电阻：
+	  <input type="number" id='dz' oninput="input()"/>
+	  <button onclick="qkdz()">清空</button>
+    </p>
+	<p>温度：
+	  <input type="number" id='wd' oninput="input()"/>
+	  <button onclick="qkwd()">清空</button>
+	</p>
+	<p>基准：
+	  <input type="number" id='jz' oninput="input()"/>
+	  <button onclick="qkjz()">清空</button>
+	</p>
+	<output id='bjz'>比较值：</output>
+	<br/>
+	<output id='wc'>误差：</output>
+	<br/>
+	<output id='hint'></output>
+	<script src="js/scripts.js"></script>
+	<br/>
+  </body>
+</html>		
