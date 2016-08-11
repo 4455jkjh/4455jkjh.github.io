@@ -30,7 +30,7 @@ function input() {
 	var jizhun=jz.value;
 	var bijiaozhi=dianzu * 309.5 / (234.5 + wendu*1);
 	var wucha=(bijiaozhi*1 / jizhun*1 - 1) * 100;
-	bjz.value = "比较值：" + bijiaozhi;
-	wc.value = "误差：" + wucha + "%";
+	bjz.value = "比较值：" + bijiaozhi.toFixed(5);
+	wc.value = "误差：" + wucha.toFixed(5) + "%";
 	//hint.value = "dz:" + dianzu + "\nwd:" + wendu + "\njz:" + jizhun;
 }
