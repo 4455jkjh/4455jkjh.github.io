@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=20, user-scalable=no"/> 
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no"/> 
   <head>
     <link href="css/styles.css" rel="stylesheet">
 	<link rel="shortcut icon" href="icon/icon.png" />
@@ -9,39 +9,32 @@
 
     <title>电阻计算</title>
 	<h1>电阻计算</h1>
-	<select size=1 id="jia" onmouseover="jxq(1);" onmouseout="jxq(2);">
-
-
-	  <option>1111</option>
-	  <option>2222</option>
-	  <option>3333</option>
-	  <option>4444</option>
-	  <option>5555</option>
-	  <option>6666</option>
-
-
-	</select>
+	
 	<p>
 	  电阻：
-	  <input type="number" id='dz' oninput="input()" palceholder="请输入电阻" />
+	  <input type="number" id='dz' oninput="input()"  />
 	  <button onclick="qkdz()">清空</button>
     </p>
+	
 	<p>温度：
 	  <input type="number" id='wd' oninput="input()"/>
 	  <button onclick="qkwd()">清空</button>
 	</p>
+	
 	<p>基准：
 	  <input type="number" id='jz' oninput="input()"/>
 	  <button onclick="qkjz()">清空</button>
 	</p>
+	
 	<output id='bjz'>比较值：</output>
 	<br/>
 	<output id='wc'>误差：</output>
 	<br/>
-	<output id='hint'></output>
+
+	<img src="icon/icon.png"/>
+	<p>另有安卓版本，功能更多，欢迎 <a href="package/dianzu.apk">下载(1.28M)</a> 安装</p>
+	
 	<script src="js/scripts.js"></script>
 	<br/>
-	<img src="icon/icon.png"/>
-	<p>另有安卓版本，功能更多，欢迎<a href="package/dianzu.apk" target="_blank" rel="external">下载</a>安装</p>
-  </body>
+	  </body>
 </html>		
