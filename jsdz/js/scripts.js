@@ -6,16 +6,16 @@ bjz = document.getElementById("bjz");
 wc = document.getElementById("wc");
 
 function qkdz() {
-	//alert("清空电阻");
 	dz.value = "";
+	input();
 }
 function qkwd() {
-	//alert("清空电阻");
 	wd.value = "";
+	input();
 }
 function qkjz() {
-	//alert("清空电阻");
 	jz.value = "";
+	input();
 }
 function qkAll() {
 	qkdz();
@@ -27,11 +27,14 @@ function input() {
 	var dianzu=dz.value;
 	var wendu=wd.value;
 	var jizhun=jz.value;
-	if(!dianzu||!wendu||!jizhun){
+	if (!dianzu || !wendu || !jizhun)
+	{
+		bjz.value = "比较值：";
+		wc.value = "误差：";
 		return;
 	}
-	var bijiaozhi=dianzu * 309.5 / (234.5 + wendu*1);
-	var wucha=(bijiaozhi*1 / jizhun*1 - 1) * 100;
+	var bijiaozhi=dianzu * 309.5 / (234.5 + wendu * 1);
+	var wucha=(bijiaozhi * 1 / jizhun * 1 - 1) * 100;
 	bjz.value = "比较值：" + bijiaozhi.toFixed(5);
 	wc.value = "误差：" + wucha.toFixed(5) + "%";
 }
