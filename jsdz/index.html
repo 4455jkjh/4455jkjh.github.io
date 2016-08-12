@@ -3,14 +3,27 @@
   <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=20, user-scalable=no"/> 
   <head>
     <link href="css/styles.css" rel="stylesheet">
+	<link rel="shortcut icon" href="icon/icon.png" />
   </head>
   <body>
 
     <title>电阻计算</title>
 	<h1>电阻计算</h1>
+	<select size=1 id="jia" onmouseover="jxq(1);" onmouseout="jxq(2);">
+
+
+	  <option>1111</option>
+	  <option>2222</option>
+	  <option>3333</option>
+	  <option>4444</option>
+	  <option>5555</option>
+	  <option>6666</option>
+
+
+	</select>
 	<p>
 	  电阻：
-	  <input type="number" id='dz' oninput="input()"/>
+	  <input type="number" id='dz' oninput="input()" palceholder="请输入电阻" />
 	  <button onclick="qkdz()">清空</button>
     </p>
 	<p>温度：
@@ -28,5 +41,6 @@
 	<output id='hint'></output>
 	<script src="js/scripts.js"></script>
 	<br/>
+	<img src="icon/icon.png"/>
   </body>
 </html>		
